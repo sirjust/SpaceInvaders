@@ -26,7 +26,7 @@ public class BulletController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
-            // todo: increase player score
+            PlayerScore.playerScore += 10;
         }
         else if (collision.tag == "Base") Destroy(gameObject);
     }
